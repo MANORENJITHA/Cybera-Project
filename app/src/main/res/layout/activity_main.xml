@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- LOGIN SECTION -->
+        <LinearLayout
+            android:id="@+id/loginSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#333"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#6200EE"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- DASHBOARD SECTION -->
+        <LinearLayout
+            android:id="@+id/dashboardSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to CyberAI"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/cyberEducationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cyber Education"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/chatbotButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chatbot"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/threatScannerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Threat Scanner" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
